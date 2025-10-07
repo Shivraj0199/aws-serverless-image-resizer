@@ -14,4 +14,10 @@
 [S3 Destination Bucket]
 ```
 
-### Step 1: 
+### Step 1: Create S3 bucket
+* **We’ll use two buckets:**
+
+1] ```source-bucket-image-resizer``` -> Upload original images here
+
+2] ```resized-bucket-image-resizer``` -> Lambda saves resized images here
+

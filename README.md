@@ -34,3 +34,17 @@
    * Runtime: Node.js 18.x
    * Permissions → Create a new role with basic Lambda permissions
    * Click Create Function
+
+### Step 3: Add Required Permissions
+
+1. Your Lambda needs to:
+      * Read from ```source-bucket```
+      * Write to ```resized-bucket```
+  
+2. Add Permissions:
+      * Go to IAM → Roles → your Lambda role → Add Permissions → Attach Policies
+  
+3. Attach:
+      * AmazonS3FullAccess
+      * CloudWatchLogsFullAccess
+  

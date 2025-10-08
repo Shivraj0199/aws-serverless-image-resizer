@@ -21,3 +21,16 @@
 
 2] ```resized-bucket-image-resizer``` -> Lambda saves resized images here
 
+3] Region: ```ap-south-1``` (or your nearest region)
+
+4] Block all **public** access 
+
+
+### Step 2: Create the Lambda Function
+
+1. Go to AWS Lambda → Create Function
+2. Choose:
+   * Name: ```imageResizerFunction```
+   * Runtime: Node.js 18.x
+   * Permissions → Create a new role with basic Lambda permissions
+   * Click Create Function

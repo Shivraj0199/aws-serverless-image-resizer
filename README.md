@@ -110,25 +110,31 @@ export const handler = async (event) => {
 ```
 
 ### Step 6: Package Dependencies (Sharp)
-
 **Because Lambda runs in a Linux environment, we need to package sharp correctly**
 
-### * On your local terminal :
+### On your local terminal :
 ```mkdir aws-serverless-image-resizer
 cd aws-serverless-image-resizer
 npm init -y
-npm install sharp aws-sdk```
+npm install sharp aws-sdk
+```
 
-### * Then ZIP all thw contents
+### Then ZIP all the contents
 
 ```zip -r function.zip .```
+
 
 * Now upload ```function.zip``` in Lambda Console:
 
 1. Go to Lambda → Code → Upload from → .zip file
 
+### Step 7: Test the Project
 
+* Go to S3 → Upload an image in ```source-bucket-image-resizer```
+* Wait a few seconds
+* Check **resized-bucket-image-resizer** → you’ll see a new file **resized-<filename>.jpg**
 
+**If successful, CloudWatch Logs will show Image resized successfully!**
 
 
 

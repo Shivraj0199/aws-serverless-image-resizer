@@ -116,7 +116,9 @@ export const handler = async (event) => {
 **Because Lambda runs in a Linux environment, we need to package sharp correctly**
 
 ### On your local terminal :
-```mkdir aws-serverless-image-resizer
+
+```
+mkdir aws-serverless-image-resizer
 cd aws-serverless-image-resizer
 npm init -y
 npm install sharp aws-sdk

@@ -131,7 +131,8 @@ npm install sharp aws-sdk
 
 * **Now upload ```function.zip``` in Lambda Console:**
 
-1. Go to Lambda → Code → Upload from → .zip file
+1. Go to **Lambda → Code → Upload from → .zip file**
+2. After upload → click **Deploy**
 
 ### Step 7: Test the Project
 
